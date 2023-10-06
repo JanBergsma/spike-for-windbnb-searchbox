@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+.drawer {
+  /* grid-template-columns: 5fr 5fr 5fr; */
+  display: grid;
+  grid-template-rows: 4.2rem 4.2rem 2fr 2fr 1fr;
+  grid-row-gap: 1rem;
+}
+
+.container {
+  display: grid;
+}
+
+.btn-container {
+  justify-items: center;
+  display: grid;
+  order: 2;
+}
+
+.field-container {
+  box-shadow: 0px 1px 6px 0px #0000001a;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+}
+
+.field-container:focus-within {
+  outline: 1px solid #333333;
+}
+
+.lbl {
+  font-size: 0.625rem;
+  font-weight: 800;
+}
+
+.field {
+  height: 1.4rem;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+.field:focus {
+  outline: none;
+}
+
+.btn {
+  box-shadow: 0px 1px 6px 0px #0000001a;
+  display: grid;
+  align-items: center;
+  gap: 0.4rem;
+  grid-auto-flow: column;
+  height: 3rem;
+  padding: 0 1rem;
+  background: #eb5757e5;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.btn:active {
+  background: #ee4242;
+}
+
+.locations {
+  margin: 0;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  list-style-type: none;
+}
+
+.location {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  column-gap: 0.4rem;
+  grid-auto-flow: column;
+}
+
+.location:hover {
+  background: #eb575720;
+  cursor: pointer;
+}
+
+.guest-adder-header {
+  padding: 1rem 1rem 0 1rem;
+  font-size: 0.875rem;
+}
+
+.guest-adder-header-title {
+  margin: 0;
+  font-weight: 800;
+}
+
+.guest-adder-header-count {
+  margin: 0;
+  font-weight: 400;
+}
+
+.guest-adder {
+  display: grid;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  grid-auto-flow: column;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.plus-min {
+  justify-items: center;
+  display: grid;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #828282;
+  border-radius: 6px;
+  color: #828282;
+}
+
+.plus-min:active {
+  background: #969696c2;
+  color: #fff;
+}
+
+.number-of-guests {
+  height: 1rem;
+}
