@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  appearance: textfield;
+}
+
+.drawer {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  box-shadow: 0px 1px 6px 0px #0000001a;
+  border-radius: 12px;
+  /* width: 80%; */
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.container:not(:first-child) {
+  border-left: #F2F2F2 solid 1px;
+}
+
+.btn-container {
+  justify-items: center;
+  display: grid;
+}
+
+.field-container {
+  padding: 0.4rem 1rem;
+}
+
+.field-container:focus-within {
+  outline: 1px solid #333333;
+}
+
+.lbl {
+  font-size: 0.625rem;
+  font-weight: 800;
+}
+
+.field {
+  height: 1.4rem;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333333;
+  width: 100%;
+
+}
+
+.field:focus {
+  outline: none;
+}
+
+.btn {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  color: #eb5757e5;
+  cursor: pointer;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: #fff;
+}
+
+.btn:active {
+  background: #f2f2f2;
+}
