@@ -22,9 +22,11 @@ input[type=number] {
 
 .drawer {
   display: grid;
-  grid-template-rows: 4.2rem 4.2rem 2fr 2fr 1fr;
+  grid-template-columns: 5fr 5fr 5fr;
   grid-row-gap: 1rem;
 }
+
+
 
 .container {
   display: grid;
@@ -33,7 +35,6 @@ input[type=number] {
 .btn-container {
   justify-items: center;
   display: grid;
-  order: 2;
 }
 
 .field-container {

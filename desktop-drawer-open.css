@@ -6,6 +6,10 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
+.query-container {
+  display: grid;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -13,7 +17,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .drawer {
@@ -64,6 +68,7 @@ input[type=number] {
   align-items: center;
   gap: 0.4rem;
   grid-auto-flow: column;
+  height: 3rem;
   padding: 0 1rem;
   background: #eb5757e5;
   cursor: pointer;

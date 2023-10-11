@@ -19,59 +19,61 @@
   </head>
 
   <body>
-    <div class="drawer">
-      <div class="container field-container">
-        <label for="location" class="lbl"> LOCATION </label>
-        <input
-          id="location"
-          type="text"
-          class="field"
-          placeholder="Add location"
-        />
-      </div>
-      <div class="container field-container">
-        <label for="guests" class="lbl"> GUESTS</label>
-        <input
-          id="guests"
-          type="number"
-          class="field"
-          placeholder="Add guests"
-        />
-      </div>
-      <div class="container btn-container">
-        <button class="btn">
-          <span class="material-icons search-icon">search</span>Search
-        </button>
-      </div>
-      <div class="container">
-        <ol class="locations">
-          <li class="location">
-            <span class="material-icons location-icon">location_on</span
-            >Helsinki, Finland
-          </li>
-          <li class="location">
-            <span class="material-icons location-icon">location_on</span>Turku,
-            Finland
-          </li>
-          <li class="location">
-            <span class="material-icons location-icon">location_on</span>Oulu,
-            Finland
-          </li>
-          <li class="location">
-            <span class="material-icons location-icon">location_on</span>Vaasa,
-            Finland
-          </li>
-        </ol>
-      </div>
-      <div class="container-guest-adder">
-        <div class="guest-adder-header">
-          <h4 class="guest-adder-header-title">Adults</h4>
-          <h5 class="guest-adder-header-count">Ages 13 or above</h5>
+    <div class="query-container">
+      <div class="drawer">
+        <div class="container field-container">
+          <label for="location" class="lbl"> LOCATION </label>
+          <input
+            id="location"
+            type="text"
+            class="field"
+            placeholder="Add location"
+          />
         </div>
-        <div class="guest-adder">
-          <button class="plus-min">+</button>
-          <div class="number-of-guests">0</div>
-          <button class="plus-min">-</button>
+        <div class="container field-container">
+          <label for="guests" class="lbl"> GUESTS</label>
+          <input
+            id="guests"
+            type="number"
+            class="field"
+            placeholder="Add guests"
+          />
+        </div>
+        <div class="container btn-container">
+          <button class="btn">
+            <span class="material-icons search-icon">search</span>Search
+          </button>
+        </div>
+        <div class="container">
+          <ol class="locations">
+            <li class="location">
+              <span class="material-icons location-icon">location_on</span
+              >Helsinki, Finland
+            </li>
+            <li class="location">
+              <span class="material-icons location-icon">location_on</span
+              >Turku, Finland
+            </li>
+            <li class="location">
+              <span class="material-icons location-icon">location_on</span>Oulu,
+              Finland
+            </li>
+            <li class="location">
+              <span class="material-icons location-icon">location_on</span
+              >Vaasa, Finland
+            </li>
+          </ol>
+        </div>
+        <div class="container-guest-adder">
+          <div class="guest-adder-header">
+            <h4 class="guest-adder-header-title">Adults</h4>
+            <h5 class="guest-adder-header-count">Ages 13 or above</h5>
+          </div>
+          <div class="guest-adder">
+            <button class="plus-min">+</button>
+            <div class="number-of-guests">0</div>
+            <button class="plus-min">-</button>
+          </div>
         </div>
       </div>
     </div>
