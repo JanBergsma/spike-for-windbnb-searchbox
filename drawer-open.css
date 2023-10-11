@@ -7,7 +7,8 @@ body {
 }
 
 .query-container {
-  display: grid;
+  container-type: inline-size;
+  width: 100%;
 }
 
 input::-webkit-outer-spin-button,
@@ -26,7 +27,12 @@ input[type=number] {
   grid-row-gap: 1rem;
 }
 
-
+@container (max-width: 765px) {
+  .drawer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.2rem 4.2rem 2fr 2fr 1fr;
+  }
+}
 
 .container {
   display: grid;
@@ -35,6 +41,12 @@ input[type=number] {
 .btn-container {
   justify-items: center;
   display: grid;
+}
+
+@container (max-width: 765px) {
+  .btn-container {
+    order: 2;
+  }
 }
 
 .field-container {
