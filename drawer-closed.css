@@ -7,7 +7,8 @@ body {
 }
 
 .query-container {
-  display: grid;
+  container-type: inline-size;
+  width: 100%;
 }
 
 input::-webkit-outer-spin-button,
@@ -20,36 +21,36 @@ input[type=number] {
   appearance: textfield;
 }
 
-.drawer {
+.drawer-closed {
   display: grid;
   align-items: center;
   grid-auto-flow: column;
   box-shadow: 0px 1px 6px 0px #0000001a;
   border-radius: 12px;
-  /* width: 80%; */
 }
 
-.container {
+.container-closed {
   display: grid;
   align-items: center;
   height: 3.5rem;
 }
 
-.container:not(:first-child) {
-  border-left: #F2F2F2 solid 1px;
+.container-closed:not(:last-child) {
+  border-right: #F2F2F2 solid 1px;
 }
 
-.btn-container {
+.btn-container-closed {
   justify-items: center;
   display: grid;
 }
 
-.field-container {
+.field-container-closed {
   padding: 0.4rem 1rem;
 }
 
-.field-container:focus-within {
+.field-container-closed:focus-within {
   outline: 1px solid #333333;
+  border-radius: 16px;
 }
 
 .lbl {
@@ -71,7 +72,7 @@ input[type=number] {
   outline: none;
 }
 
-.btn {
+.btn-closed {
   display: grid;
   align-items: center;
   grid-auto-flow: column;
@@ -83,6 +84,6 @@ input[type=number] {
   background: #fff;
 }
 
-.btn:active {
+.btn-closed:active {
   background: #f2f2f2;
 }
